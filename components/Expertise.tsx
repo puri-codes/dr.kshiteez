@@ -35,11 +35,14 @@ export const Expertise: React.FC = () => {
               Core Competencies
             </h3>
           </Reveal>
-          <Reveal delay={200}>
-            <p className="mt-4 text-gray-600 max-w-2xl">
-              Specialized orthopedic services: knee replacement surgery, hip replacement, sports injury treatment, spine and back pain management, arthritis care and fracture treatment across Kathmandu and Nepal.
-            </p>
-          </Reveal>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'MedicalBusiness',
+            name: 'Dr. Kshiteez Puri Orthopedic Services',
+            description: 'Specialized orthopedic services: knee replacement surgery, hip replacement, sports injury treatment, spine and back pain management, arthritis care and fracture treatment across Kathmandu and Nepal.',
+            serviceType: ['Knee replacement surgery', 'Hip replacement', 'Sports injury treatment', 'Spine and back pain management', 'Arthritis care', 'Fracture treatment'],
+            areaServed: ['Kathmandu', 'Nepal']
+          }) }} />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

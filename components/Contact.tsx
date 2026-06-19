@@ -26,15 +26,19 @@ export const Contact: React.FC = () => {
         
         <Reveal delay={100}>
           <h3 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#1a36e8] tracking-tight mb-6 max-w-3xl leading-tight">
-            Consultations in Kathmandu and Online — Knee, Joint & Back Pain Specialist Nepal
+            Reach Me Out
           </h3>
         </Reveal>
 
-        <Reveal delay={150}>
-          <p className="text-gray-600 max-w-2xl mb-8">
-            To schedule an appointment for orthopedic consultation, knee replacement evaluation, sports injury treatment or fracture care, contact the clinic in Kathmandu or request an online doctor consultation across Nepal.
-          </p>
-        </Reveal>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'MedicalBusiness',
+          name: 'Dr. Kshiteez Puri Orthopedic Clinic',
+          description: 'Specialized orthopedic services: knee replacement surgery, hip replacement, sports injury treatment, spine and back pain management, arthritis care and fracture treatment across Kathmandu and Nepal. To schedule an appointment for orthopedic consultation, knee replacement evaluation, sports injury treatment or fracture care, contact the clinic in Kathmandu or request an online doctor consultation across Nepal.',
+          serviceType: ['Orthopedic consultation', 'Knee replacement evaluation', 'Sports injury treatment', 'Fracture care'],
+          areaServed: ['Kathmandu', 'Nepal', 'Online'],
+          telephone: '+9779866366061'
+        }) }} />
 
         <Reveal delay={200} className="w-full">
           <form className="w-full flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>

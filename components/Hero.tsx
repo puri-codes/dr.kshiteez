@@ -25,11 +25,20 @@ export const Hero: React.FC = () => {
           </h1>
         </Reveal>
 
-        <Reveal delay={150} className="w-full text-center mb-6">
-          <p className="text-lg md:text-xl text-gray-700 max-w-3xl leading-relaxed mx-auto">
-            Orthopedic Surgeon Nepal — Bone & Joint Specialist. Knee replacement, sports injury treatment, fracture care and arthritis management. Consultations available in Kathmandu and online.
-          </p>
-        </Reveal>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Physician',
+          name: 'Dr. Kshiteez Puri',
+          medicalSpecialty: 'Orthopedics',
+          description: 'Orthopedic Surgeon Nepal — Bone & Joint Specialist. Knee replacement, sports injury treatment, fracture care and arthritis management. Consultations available in Kathmandu and online. Offering trusted medical consultation in Nepal, personalized treatment plans, and specialist orthopedic services for patients across Kathmandu, Lalitpur, Pokhara and beyond.',
+          serviceType: ['Knee replacement', 'Sports injury treatment', 'Fracture care', 'Arthritis management'],
+          areaServed: ['Kathmandu', 'Lalitpur', 'Pokhara', 'Nepal', 'Online'],
+          sameAs: [
+            'https://www.linkedin.com/in/dr-kshiteez-puri-9044a6251/',
+            'https://www.instagram.com/kshiteez7/',
+            'https://facebook.com/kshiteez2'
+          ]
+        }) }} />
 
         {/* Subtitles & CTA Grid */}
         <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-end mt-8">

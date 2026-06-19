@@ -38,11 +38,14 @@ export const Experience: React.FC = () => {
                 Professional Journey
               </h3>
             </Reveal>
-            <Reveal delay={200}>
-              <p className="mt-4 text-gray-600 max-w-md">
-                Clinical and surgical experience in orthopedic practice, trauma and fracture care, joint replacement and sports injury management in Kathmandu and regional centers across Nepal.
-              </p>
-            </Reveal>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Physician',
+              name: 'Dr. Kshiteez Puri',
+              description: 'Clinical and surgical experience in orthopedic practice, trauma and fracture care, joint replacement and sports injury management in Kathmandu and regional centers across Nepal.',
+              medicalSpecialty: 'Orthopedics',
+              areaServed: ['Kathmandu', 'Nepal']
+            }) }} />
           </div>
 
           {/* Timeline */}

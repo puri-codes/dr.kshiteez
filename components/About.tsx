@@ -18,11 +18,15 @@ export const About: React.FC = () => {
                 I am Dr. Kshiteez Puri, an Orthopedic Surgeon in Nepal and Kathmandu specializing in bone & joint care, knee and hip replacements, sports injury treatment, and fracture management.
               </h3>
             </Reveal>
-            <Reveal delay={300}>
-              <p className="mt-6 text-gray-600 max-w-xl">
-                Offering trusted medical consultation in Nepal, personalized treatment plans, and specialist orthopedic services for patients across Kathmandu, Lalitpur, Pokhara and beyond.
-              </p>
-            </Reveal>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Physician',
+              name: 'Dr. Kshiteez Puri',
+              medicalSpecialty: 'Orthopedics',
+              description: 'Offering trusted medical consultation in Nepal, personalized treatment plans, and specialist orthopedic services for patients across Kathmandu, Lalitpur, Pokhara and beyond.',
+              serviceType: ['Orthopedic consultation', 'Knee replacement', 'Hip replacement', 'Sports injury treatment', 'Fracture care', 'Arthritis management'],
+              areaServed: ['Kathmandu', 'Lalitpur', 'Pokhara', 'Nepal', 'Online']
+            }) }} />
           </div>
 
           {/* Image */}
