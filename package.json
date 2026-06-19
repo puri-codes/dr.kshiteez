@@ -1,0 +1,26 @@
+{
+  "name": "sapir-roche-portfolio-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "preview": "next start"
+  },
+  "dependencies": {
+    "jpegtran-bin": "^7.0.0",
+    "mammoth": "^1.12.0",
+    "next": "^15.5.19",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}
