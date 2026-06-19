@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
     <section
       id="home"
       ref={sectionRef}
-      className="relative isolate min-h-screen flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden bg-[#F5F7FA]"
+      className="relative isolate min-h-[100svh] flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden bg-[#F5F7FA]"
     >
       <canvas ref={canvasRef} className="absolute inset-0 z-0 h-full w-full pointer-events-none" aria-hidden="true" />
       <div className="absolute inset-0 z-[1] pointer-events-none bg-gradient-to-b from-white/20 via-white/0 to-white/75" />

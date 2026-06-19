@@ -265,6 +265,28 @@ export function useAmbientBackground() {
     initBlobs();
     adjustParticlesCount();
 
+    const resizeObserver = typeof ResizeObserver !== 'undefined'
+      ? new ResizeObserver(() => {
+          resize();
+        })
+      : null;
+
+    resizeObserver?.observe(section);
+
+    const handleWindowLoad = () => {
+      resize();
+    };
+
+    window.addEventListener('load', handleWindowLoad);
+
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(() => {
+        if (!disposed) {
+          resize();
+        }
+      });
+    }
+
     const handleMouseMove = (event: MouseEvent) => {
       const rect = section.getBoundingClientRect();
       mouse.targetX = event.clientX - rect.left;
@@ -339,6 +361,8 @@ export function useAmbientBackground() {
     return () => {
       disposed = true;
       window.cancelAnimationFrame(rafId);
+      resizeObserver?.disconnect();
+      window.removeEventListener('load', handleWindowLoad);
       window.removeEventListener('resize', resize);
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('mousemove', handleMouseMove);
