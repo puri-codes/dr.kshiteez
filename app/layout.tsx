@@ -89,6 +89,7 @@ export default function RootLayout({
         <meta name="keywords" content={KEYWORDS.join(', ')} />
         <meta name="author" content="Dr. Kshiteez Puri" />
         <meta name="robots" content="index, follow" />
+        <link rel="icon" href="/images/kshiteez.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
