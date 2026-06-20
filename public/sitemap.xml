@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Basic sitemap. Replace example.com with your real domain or generate dynamically for large sites. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://kshiteezpuri.com.np/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://kshiteezpuri.com.np/about</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kshiteezpuri.com.np/blogs</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kshiteezpuri.com.np/contact</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://kshiteezpuri.com.np/experience</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://kshiteezpuri.com.np/expertise</loc>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://kshiteezpuri.com.np/work</loc>
+    <priority>0.64</priority>
+  </url>
+</urlset>

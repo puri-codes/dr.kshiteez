@@ -1,0 +1,12 @@
+# robots.txt for site crawling
+# Allow all crawlers full access. Replace example.com with your domain.
+User-agent: *
+Allow: /
+
+# Sitemap and Host (replace with your live domain)
+Sitemap: https://kshiteezpuri.com.np/sitemap.xml
+Host: https://kshiteezpuri.com.np
+
+# If you ever want to block staging or preview environments, add rules like:
+# User-agent: *
+# Disallow: /preview/
