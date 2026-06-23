@@ -9,4 +9,6 @@ Host: https://kshiteezpuri.com.np
 
 # If you ever want to block staging or preview environments, add rules like:
 # User-agent: *
-# Disallow: /preview/
+Disallow: /preview/
+Disallow: /admin/
+Disallow: /blogs/admin/
