@@ -5,7 +5,7 @@ export const About: React.FC = () => {
   return (
     <section id="about" className="min-h-screen bg-white flex items-center">
       <div className="w-full px-6 max-w-7xl mx-auto">
-        <div className="flex items-center justify-between gap-12 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
           {/* Section Title and Heading */}
           <div className="flex-1">
             <Reveal>
@@ -14,7 +14,7 @@ export const About: React.FC = () => {
               </h2>
             </Reveal>
             <Reveal delay={200}>
-              <h3 className="text-2xl md:text-4xl lg:text-5xl font-medium text-[#1a36e8] leading-tight tracking-tight">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-[#1a36e8] leading-tight tracking-tight text-center lg:text-left">
                 I am Dr. Kshiteez Puri, an Orthopedic Surgeon in Nepal and Kathmandu specializing in bone & joint care, knee and hip replacements, sports injury treatment, and fracture management.
               </h3>
             </Reveal>
@@ -30,11 +30,11 @@ export const About: React.FC = () => {
           </div>
 
           {/* Image */}
-          <div className="flex-1 flex justify-center lg:justify-end">
+          <div className="flex-1 flex justify-center lg:justify-end mb-8 lg:mb-0">
             <Reveal delay={300}>
               <div className="relative w-full max-w-[340px] aspect-[3/4] rounded-2xl overflow-hidden">
                 <img 
-                  src="images/pic3.jpeg" 
+                  src="/images/pic3.jpeg" 
                   alt="Dr. Kshiteez Puri Potrait" 
                   className="w-full h-full object-cover"
                 />

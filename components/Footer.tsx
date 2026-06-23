@@ -110,7 +110,7 @@ const socialLinks = [
 export const Footer: React.FC = () => {
   return (
     <footer className="relative overflow-hidden bg-brand-light/40 pt-24 pb-8 font-sans">
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#1a36e8]/30 to-transparent" />
+      <div id="footer-top" className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#1a36e8]/30 to-transparent" />
       <div className="absolute -top-24 right-[-8rem] h-64 w-64 rounded-full bg-[#1a36e8]/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-[-7rem] h-72 w-72 rounded-full bg-white/80 blur-3xl pointer-events-none" />
 
@@ -138,7 +138,7 @@ export const Footer: React.FC = () => {
           <Reveal delay={80} className="lg:col-span-3">
             <div className="overflow-hidden rounded-3xl bg-white/70 shadow-sm backdrop-blur-sm">
               <img
-                src="images/pic3.jpeg"
+                src="/images/pic3.jpeg"
                 alt="Dr. Kshiteez Puri portrait"
                 className="h-[360px] w-full object-contain object-center"
               />

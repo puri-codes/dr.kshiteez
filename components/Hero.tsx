@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
         
         {/* Main Title */}
         <Reveal delay={100} className="w-full text-center mb-12">
-          <h1 className="text-[12vw] md:text-[10vw] lg:text-[140px] leading-[0.85] font-bold text-[#1a36e8] tracking-tighter uppercase">
+          <h1 className="text-[18vw] sm:text-[16vw] md:text-[10vw] lg:text-[140px] leading-[0.85] font-bold text-[#1a36e8] tracking-tighter uppercase">
             Dr. Kshiteez Puri
           </h1>
         </Reveal>
@@ -45,14 +45,14 @@ export const Hero: React.FC = () => {
           
           {/* Left Subtitle */}
           <Reveal delay={300} direction="right" className="text-left">
-            <p className="text-gray-600 text-sm md:text-base max-w-[250px] leading-relaxed">
+            <p className="text-gray-600 text-base md:text-lg max-w-[250px] leading-relaxed">
               Specialized in the diagnosis, treatment, and surgical management of musculoskeletal conditions and trauma.
             </p>
           </Reveal>
 
           {/* Center Subtitle */}
           <Reveal delay={400} className="text-center flex justify-center">
-            <p className="text-gray-500 text-sm md:text-base max-w-[300px] leading-relaxed">
+            <p className="text-gray-500 text-base md:text-lg max-w-[300px] leading-relaxed">
              Dedicated to advancing orthopedic healthcare through clinical practice, research, and medical education.
             </p>
           </Reveal>

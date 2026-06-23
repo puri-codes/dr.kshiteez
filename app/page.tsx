@@ -6,8 +6,13 @@ import { Blogs } from '../components/Blogs';
 import { Experience } from '../components/Experience';
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
+import { getFeaturedBlogPosts } from '../lib/blog';
 
-export default function Page() {
+export const dynamic = 'force-dynamic';
+
+export default async function Page() {
+  const featuredPosts = await getFeaturedBlogPosts(3);
+
   return (
     <div className="min-h-screen bg-white text-[#171717] font-sans selection:bg-[#1a36e8] selection:text-white">
       <Navbar />
@@ -16,7 +21,7 @@ export default function Page() {
         <About />
         <Expertise />
         <Experience />
-        <Blogs />
+        <Blogs posts={featuredPosts} />
         <Contact />
       </main>
       <Footer />

@@ -27,12 +27,12 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Expertise', href: '#expertise' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Blogs', href: '#blogs' },
-    { name: 'Contact', href: '#footer' },
+    { name: 'Home', href: '/#home' },
+    { name: 'About', href: '/#about' },
+    { name: 'Expertise', href: '/#expertise' },
+    { name: 'Experience', href: '/#experience' },
+    { name: 'Blogs', href: '/blogs' },
+    { name: 'Contact', href: '#footer-top' },
   ];
 
   return (
@@ -43,9 +43,9 @@ export const Navbar: React.FC = () => {
     >
       <div className="bg-white/80 backdrop-blur-md border border-gray-100 shadow-sm rounded-full px-6 py-3 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex-shrink-0">
+        <a href="/#home" className="flex-shrink-0">
           <img 
-            src="images/kshiteez.png" 
+            src="/images/kshiteez.png" 
             alt="Sapir Logo" 
             className="h-6 w-auto"
           />
